@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/coordinatorLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	android:background="@color/windowBackground">
+
+	<android.support.design.widget.AppBarLayout
+		android:id="@+id/appBarLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<include
+			android:id="@+id/toolbar"
+			layout="@layout/toolbar"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="?attr/colorPrimary"
+			android:orientation="horizontal">
+
+			<ImageButton
+				android:id="@+id/main_activityImageButton_back"
+				android:layout_height="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:src="@mipmap/arrow_back36px"
+				android:layout_width="wrap_content"/>
+
+		</LinearLayout>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<include
+		layout="@layout/main_body"/>
+
+</android.support.design.widget.CoordinatorLayout>
+
